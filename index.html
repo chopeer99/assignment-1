@@ -5,27 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
+    <header class="main-header">
+        <div class="logo-container">
+            <span class="logo-text">MUSAB</span>
+        </div>
+        <nav class="main-nav">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
+        <button class="cta-button">Connect with Me</button>
     </header>
 
     <section id="about" class="hero-section">
         <p class="greeting">Hello,</p>
-        <h1>I'm [Your Name].</h1>
-        <p class="intro-text">I'm a passionate and dedicated researcher with expertise in AI and machine learning. My
-            work focuses on developing innovative solutions for complex data problems, with a strong interest in privacy
-            and security.</p>
+        <h1>I'm Musab Barnawi.</h1>
+        <p class="intro-text">I am a passionate computer science student at King Fahd University of Petroleum and
+            Minerals (KFUPM), specializing in
+            the field of cybersecurity. My goal is to apply my skills to protect digital systems and build a more secure
+            technological future.</p>
         <div class="video-container">
-            <img src="assets/images/profile-placeholder.jpg" alt="[Your Name] Profile Video" class="profile-img">
+            <img src="assets/images/IMG-20240801-WA0057.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="content-left">
+                <span class="skills-highlight">My Skills and Experience</span>
+                <h2>Quality, Structure, and Real Results</h2>
+                <p>
+                    I have built a strong foundation in cybersecurity and networking through my coursework and projects.
+                    I'm proficient in threat analysis, network security protocols, and Python scripting for automation
+                    and tool development. My experience includes hands-on work in a lab environment, where I've
+                    implemented DDoS mitigation strategies and configured SDN controllers to optimize network
+                    performance.
+                </p>
+            </div>
+            <div class="image-right">
+                <img src="assets/images/phone-mockup.png" alt="Skills visualization" class="phone-mockup">
+            </div>
         </div>
     </section>
 
@@ -34,16 +59,25 @@
             <h2>Projects</h2>
             <div class="project-grid">
                 <div class="project">
-                    <h3>Project 1: Secure Federated Graph-Filtering</h3>
-                    <img src="assets/images/project1-placeholder.jpg" alt="Project 1 Image" class="project-img">
-                    <p>A research project focused on building a secure and private graph-filtering system using
-                        federated learning techniques to protect user data.</p>
+                    <h3>Project 1: DDoS Attack Defender (Cybersecurity)</h3>
+                    <img src="assets/images/cy.jpeg" alt="Project 1 Image" class="project-img">
+                    <p>This project is like a security guard for a website. Its job is to protect a website from being
+                        overwhelmed by a huge
+                        number of fake visitors (a DDoS attack). It uses a smart system to tell the difference between
+                        real users and fake ones.
+                        When it spots the fake visitors trying to crash the site, it blocks them so the website stays
+                        online and works for
+                        everyone.</p>
                 </div>
                 <div class="project">
-                    <h3>Project 2: Differentiably Private Speaker Anonymization</h3>
-                    <img src="assets/images/project2-placeholder.jpg" alt="Project 2 Image" class="project-img">
-                    <p>An application that uses differential privacy to anonymize speaker voices, ensuring that
-                        sensitive information is not compromised during analysis.</p>
+                    <h3>Project 2: Smart Network Traffic Cop (Networking)</h3>
+                    <img src="assets/images/net.jpeg" alt="Project 2 Image" class="project-img">
+                    <p>This project is like a traffic controller for internet data. On a computer network, data needs to
+                        travel from one point
+                        to another. My project figures out the fastest and most efficient roads for this data to take.
+                        If one road gets busy, it
+                        automatically redirects the data to a clearer path. This helps the entire network run smoothly
+                        and without slowdowns.</p>
                 </div>
             </div>
         </div>
@@ -67,7 +101,7 @@
         </div>
     </section>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
